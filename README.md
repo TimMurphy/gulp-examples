@@ -7,41 +7,39 @@
  
 ## Machine Configuration
 
-1. Install Chocolatey
+Install Chocolatey
 
-	```
 	@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-	```
 
-2. Install npm
+Install npm
 
-	```
 	choco install npm
-	```
 	
-3. Install Gulp
+Install Gulp
  
-	```
 	npm install --global gulp
-	```
 
 ## Project Configuration
 
-1. Install Gulp
- 
-	```
-	npm install --save-dev gulp
-	```
-	
-2. Create `gulpfile.js`
+Initialize npm
 
-	```
+	npm init
+	
+Initialize bower
+
+	bower init
+	
+Install Gulp
+ 
+	npm install --save-dev gulp
+	
+Add `gulpfile.js`
+
 	var gulp = require('gulp');
 
 	gulp.task('default', function() {
   		console.log('hello');	  
 	});
-	```
 
 ## Examples
 
